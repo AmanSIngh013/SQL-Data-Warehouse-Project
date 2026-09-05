@@ -104,7 +104,7 @@ WHERE sls_sales != sls_quantity * sls_price
 ORDER BY sls_sales, sls_quantity, sls_price;
 
 -- ====================================================================
--- Checking 'silver.erp_cust_az12'
+-- Checking 'silver.erp_customer'
 -- ====================================================================
 -- Identify Out-of-Range Dates
 -- Expectation: Birthdates between 1924-01-01 and Today
@@ -120,7 +120,7 @@ SELECT DISTINCT
 FROM silver.erp_customer
 
 -- ====================================================================
--- Checking 'silver.erp_loc_a101'
+-- Checking 'silver.erp_location'
 -- ====================================================================
 -- Data Standardization & Consistency
 SELECT DISTINCT 
@@ -129,7 +129,7 @@ FROM silver.erp_location
 ORDER BY cntry;
 
 -- ====================================================================
--- Checking 'silver.erp_px_cat_g1v2'
+-- Checking 'silver.erp_px_cat'
 -- ====================================================================
 -- Check for Unwanted Spaces
 -- Expectation: No Results
